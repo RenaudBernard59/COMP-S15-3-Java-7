@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<architect-project version="1.0" appversion="1.0.8">
+ <project-name>Farm01</project-name>
+ <print-settings numCopies="1" zoom="1.0" pageNumbersPrinted="true" orientation="1" paperWidth="612.0" paperHeight="792.0" leftBorder="50.0" rightBorder="50.0" topBorder="50.0" bottomBorder="50.0" />
+ <project-data-sources>
+  <data-source id="DS0">
+   <property key="Logical" value="PlayPen Database" />
+  </data-source>
+  <data-source id="DS2">
+   <property key="Connection Type" value="MySQL" />
+   <property key="Logical" value="BD_COMMANDE" />
+   <property key="JDBC URL" value="jdbc:mysql://localhost:3306/bd_commande?zeroDateTimeBehavior=convertToNull" />
+   <property key="UID" value="root" />
+   <property key="PWD" value="" />
+   <property key="ca.sqlpower.architect.etl.kettle.database" value="" />
+   <property key="ca.sqlpower.architect.etl.kettle.port" value="" />
+   <property key="ca.sqlpower.architect.etl.kettle.hostname" value="" />
+   <property key="ca.sqlpower.architect.etl.kettle.repos.login" value="" />
+   <property key="ca.sqlpower.architect.etl.kettle.repos.password" value="" />
+  </data-source>
+ </project-data-sources>
+ <source-databases>
+  <database id="DB0" populated="true" UUID="cdea3e6a-b1a2-4187-9452-53bffecf06de" dbcs-ref="DS2" name="BD_COMMANDE" physicalName="BD_COMMANDE" >
+   <catalog id="CAT1" populated="true" UUID="a71c717c-dfe6-41dc-b9ae-c5b416bbbe7c" name="bd_commande" nativeTerm="database" physicalName="bd_commande" >
+    <table id="TAB2" populated="false" UUID="339f82e6-ee40-4b78-963b-e25e9223c7e1" name="client" objectType="TABLE" physicalName="client" >
+     <remarks></remarks>
+     <folder id="FOLTAB21" populated="false" name="Columns" physicalName="Columns" type="1">
+      <index id="IDX3" populated="true" UUID="55309fa4-9516-4a8c-b75a-9156925f3e2f" clustered="false" name="client_pk" physicalName="client_pk" primaryKeyIndex="true" unique="false" >
+      </index>
+     </folder>
+    </table>
+    <table id="TAB4" populated="false" UUID="9486fc71-3fe4-4e39-9777-d6b68c345ca8" name="commande" objectType="TABLE" physicalName="commande" >
+     <remarks></remarks>
+     <folder id="FOLTAB41" populated="false" name="Columns" physicalName="Columns" type="1">
+      <index id="IDX5" populated="true" UUID="baf1be1a-81b8-4381-8c19-1aae8ab9d875" clustered="false" name="commande_pk" physicalName="commande_pk" primaryKeyIndex="true" unique="false" >
+      </index>
+     </folder>
+    </table>
+    <table id="TAB6" populated="false" UUID="d1bbc933-5f7f-49e2-bc24-9b2b87238faf" name="employeedetails" objectType="TABLE" physicalName="employeedetails" >
+     <remarks></remarks>
+     <folder id="FOLTAB61" populated="false" name="Columns" physicalName="Columns" type="1">
+      <index id="IDX7" populated="true" UUID="f22bc9ca-ffb8-4fe1-91fc-4386869790e8" clustered="false" name="employeedetails_pk" physicalName="employeedetails_pk" primaryKeyIndex="true" unique="false" >
+      </index>
+     </folder>
+    </table>
+    <table id="TAB8" populated="false" UUID="b75299db-6a10-48bc-9e32-564a49d7312f" name="relressources" objectType="TABLE" physicalName="relressources" >
+     <remarks></remarks>
+     <folder id="FOLTAB81" populated="false" name="Columns" physicalName="Columns" type="1">
+      <index id="IDX9" populated="true" UUID="a281412d-e5b1-4454-9f90-e2e4e4a18b66" clustered="false" name="relressources_pk" physicalName="relressources_pk" primaryKeyIndex="true" unique="false" >
+      </index>
+     </folder>
+    </table>
+    <table id="TAB10" populated="false" UUID="7ea152d4-875c-43aa-9b10-2cfa9ea64f86" name="ressources" objectType="TABLE" physicalName="ressources" >
+     <remarks></remarks>
+     <folder id="FOLTAB101" populated="false" name="Columns" physicalName="Columns" type="1">
+      <index id="IDX11" populated="true" UUID="e5ca410f-6a9d-4c98-a1fb-43574c525781" clustered="false" name="ressources_pk" physicalName="ressources_pk" primaryKeyIndex="true" unique="false" >
+      </index>
+     </folder>
+    </table>
+   </catalog>
+   <catalog id="CAT12" populated="false" UUID="bd800044-8eff-4eca-9bb3-378ebec14519" name="information_schema" nativeTerm="database" physicalName="information_schema" >
+   </catalog>
+   <catalog id="CAT13" populated="false" UUID="075146b1-074b-4564-bcb7-bae21a72aa49" name="mysql" nativeTerm="database" physicalName="mysql" >
+   </catalog>
+   <catalog id="CAT14" populated="false" UUID="37706f9e-4ebd-49a7-bcd5-a59de9a1d1f8" name="performance_schema" nativeTerm="database" physicalName="performance_schema" >
+   </catalog>
+   <catalog id="CAT15" populated="false" UUID="3e6df989-6eb3-4c9e-b5a9-b69082dc99b3" name="phpmyadmin" nativeTerm="database" physicalName="phpmyadmin" >
+   </catalog>
+   <catalog id="CAT16" populated="false" UUID="617f57d2-c7be-485f-b912-859dafd89b0b" name="test" nativeTerm="database" physicalName="test" >
+   </catalog>
+   <relationships>
+   </relationships>
+  </database>
+ </source-databases>
+ <target-database id="ppdb" dbcs-ref="DS0">
+  <table id="TAB18" populated="true" UUID="9799fdc1-1135-44eb-89e4-79ea3528fee4" name="Joueur" objectType="TABLE" physicalName="Joueur" >
+   <remarks></remarks>
+   <folder id="FOLTAB181" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL19" populated="true" UUID="88393a4d-c775-4699-8d0a-79dabeabd28f" autoIncrement="true" autoIncrementSequenceName="Joueur_ID_Joueur_seq" defaultValue="" name="ID_Joueur" nullable="0" physicalName="ID_Joueur" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL20" populated="true" UUID="fa6378a4-81ac-413a-b87a-b4caae91e161" autoIncrement="false" autoIncrementSequenceName="Joueur_NomJoueur_seq" defaultValue="" name="NomJoueur" nullable="0" physicalName="NomJoueur" precision="50" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    </folder>
+    <folder id="FOLTAB183" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    </folder>
+    <folder id="FOLTAB182" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    </folder>
+    <folder id="FOLTAB184" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX21" populated="true" UUID="94994167-7da5-4cbf-86e7-02fa7b643205" clustered="false" name="Joueur_PK" physicalName="joueur_pk" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC22" populated="true" UUID="7bdd02d7-52d8-4623-be15-a022a8aa5435" ascendingOrDescending="UNSPECIFIED" column-ref="COL19" name="ID_Joueur" physicalName="ID_Joueur" />
+    </index>
+   </folder>
+  </table>
+  <table id="TAB23" populated="true" UUID="45b63b18-8523-4ef3-b46b-88c0d07e48b4" name="RelJoueur" objectType="TABLE" physicalName="RelJoueur" >
+   <remarks></remarks>
+   <folder id="FOLTAB231" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL24" populated="true" UUID="c0d26466-8dd5-4628-b86f-02701949ce8e" autoIncrement="true" autoIncrementSequenceName="RelJoueur_idRelJoueyr_seq" defaultValue="" name="idRelJoueyr" nullable="0" physicalName="idRelJoueyr" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL25" populated="true" UUID="d02aa843-8c45-4da2-a506-051343cde143" autoIncrement="false" autoIncrementSequenceName="RelJoueur_ID_Joueur_seq" defaultValue="" name="ID_Joueur" nullable="0" physicalName="ID_Joueur" precision="0" referenceCount="2" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL26" populated="true" UUID="c8166ceb-c5aa-4064-af43-e9c69f2aafe2" autoIncrement="false" autoIncrementSequenceName="RelJoueur_ID_Partie_seq" defaultValue="" name="ID_Partie" nullable="0" physicalName="ID_Partie" precision="0" referenceCount="2" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    </folder>
+    <folder id="FOLTAB233" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    </folder>
+    <folder id="FOLTAB232" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    </folder>
+    <folder id="FOLTAB234" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX27" populated="true" UUID="7a0f1438-bbe8-469a-9930-d5d82fc1b7e4" clustered="false" name="RelJoueur_PK" physicalName="reljoueur_pk" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC28" populated="true" UUID="d833d06d-fdc9-4677-bd6d-0f21cae1671a" ascendingOrDescending="UNSPECIFIED" column-ref="COL24" name="idRelJoueyr" physicalName="idRelJoueyr" />
+    </index>
+   </folder>
+  </table>
+  <table id="TAB29" populated="true" UUID="e22b68a2-593d-4ab8-8317-c34e1c927ce1" name="RelRessources" objectType="TABLE" physicalName="RelRessources" >
+   <remarks></remarks>
+   <folder id="FOLTAB291" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL30" populated="true" UUID="de81491b-640a-4a96-9bf1-782d53752337" autoIncrement="true" autoIncrementSequenceName="RelRessources_idRelRessources_seq" defaultValue="" name="idRelRessources" nullable="0" physicalName="idRelRessources" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL31" populated="true" UUID="a3983835-3f45-457c-a777-7c147f5421f8" autoIncrement="false" autoIncrementSequenceName="RelRessources_ID_Joueur_seq" defaultValue="" name="ID_Joueur" nullable="0" physicalName="ID_Joueur" precision="0" referenceCount="2" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL32" populated="true" UUID="983cdf1e-d80f-4a1e-be78-913d4504892d" autoIncrement="false" autoIncrementSequenceName="RelRessources_ID_Ressource_seq" defaultValue="" name="ID_Ressource" nullable="0" physicalName="ID_Ressource" precision="0" referenceCount="2" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL33" populated="true" UUID="4023f472-98a9-4cf7-a0a9-0f4659f9b126" autoIncrement="false" autoIncrementSequenceName="RelRessources_ID_Partie_seq" defaultValue="" name="ID_Partie" nullable="0" physicalName="ID_Partie" precision="0" referenceCount="2" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL34" populated="true" UUID="35434574-ea6a-4cca-955e-6583f77595fe" autoIncrement="false" autoIncrementSequenceName="RelRessources_Quantite_seq" defaultValue="" name="Quantite" nullable="0" physicalName="Quantite" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    </folder>
+    <folder id="FOLTAB293" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    </folder>
+    <folder id="FOLTAB292" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    </folder>
+    <folder id="FOLTAB294" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX35" populated="true" UUID="2198beba-279d-4417-a951-417fceebb4a1" clustered="false" name="RelRessources_PK" physicalName="relressources_pk" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC36" populated="true" UUID="a89c5aed-9218-451e-8fca-a37ae6d69557" ascendingOrDescending="UNSPECIFIED" column-ref="COL30" name="idRelRessources" physicalName="idRelRessources" />
+    </index>
+   </folder>
+  </table>
+  <table id="TAB37" populated="true" UUID="b2dc47b2-452e-40ed-a0d9-082181163a58" name="Ressource" objectType="TABLE" physicalName="Ressource" >
+   <remarks></remarks>
+   <folder id="FOLTAB371" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL38" populated="true" UUID="0a3f9535-9f9e-4baf-ac34-e14469b02f15" autoIncrement="false" autoIncrementSequenceName="Ressource_ID_Ressource_seq" defaultValue="" name="ID_Ressource" nullable="0" physicalName="ID_Ressource" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL39" populated="true" UUID="859616e1-df95-41ef-9818-755779cc37e2" autoIncrement="false" autoIncrementSequenceName="Ressource_Libelle_seq" defaultValue="" name="Libelle" nullable="0" physicalName="Libelle" precision="50" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL40" populated="true" UUID="15f849df-4b42-48c1-99e6-4ae320350ce5" autoIncrement="false" autoIncrementSequenceName="Ressource_TypeRessource_seq" defaultValue="" name="TypeRessource" nullable="0" physicalName="TypeRessource" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    </folder>
+    <folder id="FOLTAB373" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    </folder>
+    <folder id="FOLTAB372" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    </folder>
+    <folder id="FOLTAB374" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX41" populated="true" UUID="e07189ee-d417-46f2-96fa-675f86e4e656" clustered="false" name="Ressource_PK" physicalName="ressource_pk" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC42" populated="true" UUID="19df302a-3755-4cee-a69d-c3a091949a26" ascendingOrDescending="UNSPECIFIED" column-ref="COL38" name="ID_Ressource" physicalName="ID_Ressource" />
+    </index>
+   </folder>
+  </table>
+  <table id="TAB43" populated="true" UUID="aa7f6cc4-bc07-449c-bccc-32acd1ebfc98" name="Partie" objectType="TABLE" physicalName="Partie" >
+   <remarks></remarks>
+   <folder id="FOLTAB431" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL44" populated="true" UUID="a2a36ffa-62ab-4a70-a749-cb3afa0d6ca8" autoIncrement="true" autoIncrementSequenceName="Partie_ID_Partie_seq" defaultValue="" name="ID_Partie" nullable="0" physicalName="ID_Partie" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL45" populated="true" UUID="1f3669a0-4189-4c5d-8e46-eb34db4ca46d" autoIncrement="false" autoIncrementSequenceName="Partie_NomPartie_seq" defaultValue="" name="NomPartie" nullable="0" physicalName="NomPartie" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL46" populated="true" UUID="f5120e6d-9144-4ba8-98b4-e797f0d330ed" autoIncrement="false" autoIncrementSequenceName="Partie_DatePartie_seq" defaultValue="" name="DatePartie" nullable="0" physicalName="DatePartie" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="91" userDefinedTypeUUID="ee349be3-6af2-46e1-b305-975f5354b009" >
+     <remarks></remarks>
+    </column>
+    </folder>
+    <folder id="FOLTAB433" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    </folder>
+    <folder id="FOLTAB432" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    </folder>
+    <folder id="FOLTAB434" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX47" populated="true" UUID="e0825786-ef4a-4db6-a554-f2fc36850f0f" clustered="false" name="Partie_PK" physicalName="partie_pk" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC48" populated="true" UUID="4d509afd-ca7e-4de2-b6e0-00a76de40ce9" ascendingOrDescending="UNSPECIFIED" column-ref="COL44" name="ID_Partie" physicalName="ID_Partie" />
+    </index>
+   </folder>
+  </table>
+  <table id="TAB49" populated="true" UUID="f41809c8-1732-46a0-8b11-2a9dc43a1d33" name="Exploitation" objectType="TABLE" physicalName="Exploitation" >
+   <remarks></remarks>
+   <folder id="FOLTAB491" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL50" populated="true" UUID="b6d3bf7d-5c9e-4973-8a5f-caaac57d829a" autoIncrement="true" autoIncrementSequenceName="Exploitation_ID_Exploitation_seq" defaultValue="" name="ID_Exploitation" nullable="0" physicalName="ID_Exploitation" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL51" populated="true" UUID="eca73627-0d94-47e0-8b2e-d2092581707c" autoIncrement="false" autoIncrementSequenceName="Exploitation_ID_Joueur_seq" defaultValue="" name="ID_Joueur" nullable="0" physicalName="ID_Joueur" precision="0" referenceCount="2" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL52" populated="true" UUID="03c6732d-4d5b-4580-ab7f-b35758d8f785" autoIncrement="false" autoIncrementSequenceName="Exploitation_ID_Partie_seq" defaultValue="" name="ID_Partie" nullable="0" physicalName="ID_Partie" precision="0" referenceCount="2" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL53" populated="true" UUID="4742b5cb-3e00-4d1b-bd5e-3951d27cbf47" autoIncrement="false" autoIncrementSequenceName="Exploitation_QttEnCours_seq" defaultValue="" name="QttEnCours" nullable="0" physicalName="QttEnCours" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    </folder>
+    <folder id="FOLTAB493" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    </folder>
+    <folder id="FOLTAB492" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    </folder>
+    <folder id="FOLTAB494" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX54" populated="true" UUID="d57fea8f-d356-46c0-965b-2b887c294440" clustered="false" name="Exploitation_PK" physicalName="exploitation_pk" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC55" populated="true" UUID="88d8a8b2-e473-4bc7-b13a-07affd2a7e0f" ascendingOrDescending="UNSPECIFIED" column-ref="COL50" name="ID_Exploitation" physicalName="ID_Exploitation" />
+    </index>
+   </folder>
+  </table>
+  <relationships>
+   <relationship id="REL56" populated="true" UUID="07447f76-032d-49c3-b4bd-589a890a49a1" deferrability="7" deleteRule="3" fk-table-ref="TAB49" fkCardinality="7" identifying="false" name="Joueur_Exploitation_fk" physicalName="joueur_exploitation_fk" pk-table-ref="TAB18" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP57" populated="true" UUID="50bf52dd-0c42-4c24-9fdd-6a051ab829af" fk-column-ref="COL51" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL19" />
+   </relationship>
+   <relationship id="REL58" populated="true" UUID="920418fd-2cd0-48d4-90cf-b14fc0b21a43" deferrability="7" deleteRule="3" fk-table-ref="TAB23" fkCardinality="7" identifying="false" name="Joueur_RelJoueur_fk" physicalName="joueur_reljoueur_fk" pk-table-ref="TAB18" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP59" populated="true" UUID="9490e2b3-8a42-40c5-98f0-aa2af7f28dfc" fk-column-ref="COL25" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL19" />
+   </relationship>
+   <relationship id="REL60" populated="true" UUID="52154e34-a57f-4d37-ad41-5ad8a3caed76" deferrability="7" deleteRule="3" fk-table-ref="TAB29" fkCardinality="7" identifying="false" name="Joueur_RelRessources_fk" physicalName="joueur_relressources_fk" pk-table-ref="TAB18" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP61" populated="true" UUID="3b9f202a-6a78-4e17-9dc3-68255a0b9827" fk-column-ref="COL31" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL19" />
+   </relationship>
+   <relationship id="REL62" populated="true" UUID="c600a6f8-097d-4b01-be55-9ce1ef5daa92" deferrability="7" deleteRule="3" fk-table-ref="TAB29" fkCardinality="7" identifying="false" name="Ressource_RelRessources_fk" physicalName="ressource_relressources_fk" pk-table-ref="TAB37" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP63" populated="true" UUID="abada7ac-3c9f-4ee8-9df1-ac7f5cc55283" fk-column-ref="COL32" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL38" />
+   </relationship>
+   <relationship id="REL64" populated="true" UUID="6dc0cf41-7928-4599-a39e-2dc15a9d15fd" deferrability="7" deleteRule="3" fk-table-ref="TAB29" fkCardinality="7" identifying="false" name="Partie_RelRessources_fk" physicalName="partie_relressources_fk" pk-table-ref="TAB43" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP65" populated="true" UUID="afbff86c-df67-4eb8-9396-ee9d6a25df03" fk-column-ref="COL33" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL44" />
+   </relationship>
+   <relationship id="REL66" populated="true" UUID="03dc5d5f-42b0-476f-b62c-b38cdda9a76a" deferrability="7" deleteRule="3" fk-table-ref="TAB49" fkCardinality="7" identifying="false" name="Partie_Exploitation_fk" physicalName="partie_exploitation_fk" pk-table-ref="TAB43" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP67" populated="true" UUID="3d78ee96-7d39-4095-bae8-6b353a648456" fk-column-ref="COL52" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL44" />
+   </relationship>
+   <relationship id="REL68" populated="true" UUID="66dff7f5-f0a8-4fc8-a230-f80e0db82724" deferrability="7" deleteRule="3" fk-table-ref="TAB23" fkCardinality="7" identifying="false" name="Partie_RelJoueur_fk" physicalName="partie_reljoueur_fk" pk-table-ref="TAB43" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP69" populated="true" UUID="c10eae52-b1b1-4e25-b09c-87ed04473f23" fk-column-ref="COL26" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL44" />
+   </relationship>
+  </relationships>
+ </target-database>
+ <ddl-generator type="ca.sqlpower.architect.ddl.MySqlDDLGenerator" allow-connection="false" target-catalog="myfarm"> </ddl-generator>
+ <liquibase-settings useSeparateChangeSets="false" generateId="false" idStart="1"/>
+ <create-kettle-job-settings filePath="" jobName="" schemaName="" kettleJoinType="0" savingToFile="true" />
+ <play-pen zoom="1.0" viewportX="0" viewportY="0" relationship-style="rectilinear" names-displayLogicalNames="true" showPrimaryTag="true" showForeignTag="true" showAlternateTag="true" columnVisibility="ALL" relationshipLabelVisibility="true">
+  <table-pane table-ref="TAB18" x="215" y="321" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB23" x="313" y="727" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB29" x="868" y="242" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB37" x="1169" y="62" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB43" x="800" y="568" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB49" x="342" y="112" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-link relationship-ref="REL62" pkConnection="0.17142857142857143" fkConnection="0.8857142857142857" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="132"/>
+  <table-link relationship-ref="REL64" pkConnection="0.22340425531914893" fkConnection="0.7904761904761904" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="72"/>
+  <table-link relationship-ref="REL66" pkConnection="0.45569620253164556" fkConnection="0.5368421052631579" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="18"/>
+  <table-link relationship-ref="REL56" pkConnection="0.6331877729257642" fkConnection="0.31640625" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="72"/>
+  <table-link relationship-ref="REL68" pkConnection="0.3924050632911392" fkConnection="0.5789473684210527" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="18"/>
+  <table-link relationship-ref="REL58" pkConnection="0.5327510917030568" fkConnection="0.4567901234567901" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="132"/>
+  <table-link relationship-ref="REL60" pkConnection="0.3492063492063492" fkConnection="0.5765765765765766" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="33"/>
+ </play-pen>
+ <critic-manager>
+  <critic-grouping platformType="Generic" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.PrimaryKeyCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.RelationshipMappingTypeCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.EmptyRelationshipCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.AlphaNumericNameCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.AlphaNumericSequenceNameCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.SetDefaultOnColumnWithNoDefaultCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.SetNullOnNonNullableColumnCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.DuplicateNameCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="DB2" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.DB2UnsupportedFeaturesCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="H2" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.H2UnsupportedFeaturesCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="HSQLDB" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.HSQLDBUnsupportedFeaturesCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="MySQL" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.MySQLCommentCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.MySQLReservedWordsCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.MySQLUnsupportedFeaturesCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="Oracle" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.OraclePhysicalNameCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.OracleReservedWordsCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.OracleUnsupportedFeaturesCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="PostgreSQL" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.PostgreSQLReservedWordsCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="SQL Server" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.SQLServerUnsupportedFeaturesCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.SQLServerReservedWordsCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="SQL Server 2000" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.SQLServer2000UnsupportedFeaturesCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="SQL Server 2005" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.SQLServer2005UnsupportedFeaturesCritic" severity="ERROR"/>
+  </critic-grouping>
+ </critic-manager>
+ <profiles topNCount="10">
+  </profiles>
+  <olap>
+  </olap>
+  <olap-gui>
+  </olap-gui>
+</architect-project>
